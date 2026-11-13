@@ -20,35 +20,6 @@
         "version": "2.6.2",
         "cells": [
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": -1,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "7b5da4cf-b1be-45d8-b963-21a6dc8f251d",
-            "source": {
-              "x": 480,
-              "y": 260
-            },
-            "target": {
-              "x": 580,
-              "y": 360
-            },
-            "vertices": []
-          },
-          {
             "position": {
               "x": 670,
               "y": 200
@@ -69,6 +40,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -152,7 +124,6 @@
               ]
             },
             "id": "70e32954-a319-4db8-a307-708e433c7f50",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Get-Data",
@@ -170,8 +141,8 @@
           },
           {
             "position": {
-              "x": 610,
-              "y": 469
+              "x": 730,
+              "y": 600
             },
             "size": {
               "width": 120,
@@ -182,16 +153,19 @@
                 "text": "VW-Service\n"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -275,7 +249,6 @@
               ]
             },
             "id": "f0437f85-5e0f-40df-80e3-eb59c11e0f4d",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "VW-Service\n",
@@ -283,20 +256,152 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "fb28b250-132f-46f5-8168-ba2f14cff3d3",
+                  "title": "Falscher Login",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Manipulation",
+                  "description": "Geben Sie eine Beschreibung dieser Bedrohung an",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Login"
+            ],
+            "id": "63f19209-8e67-4d87-b9d8-ae16c40a637c",
+            "source": {
+              "cell": "70e32954-a319-4db8-a307-708e433c7f50",
+              "port": "1153e610-b8a1-453e-8cc1-7fd4fd1e1a32"
+            },
+            "target": {
+              "cell": "f0437f85-5e0f-40df-80e3-eb59c11e0f4d",
+              "port": "50488b7b-2031-45de-8e83-a00a7e06eeac"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 450
+              },
+              {
+                "x": 740,
+                "y": 500
+              },
+              {
+                "x": 760,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "97071a5a-5444-484b-930e-da6b92143310",
+            "source": {
+              "cell": "f0437f85-5e0f-40df-80e3-eb59c11e0f4d",
+              "port": "ed0e683d-b4f3-4f8b-96c7-32e074db142e"
+            },
+            "target": {
+              "cell": "70e32954-a319-4db8-a307-708e433c7f50",
+              "port": "355b7e23-5d92-4bbe-810a-492a599dbeed"
+            },
+            "vertices": [
+              {
+                "x": 840,
+                "y": 480
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 4
   }
 }
