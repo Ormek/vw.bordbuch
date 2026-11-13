@@ -406,11 +406,343 @@
         "placeholder": "Neue PLOT4ai Diagramm Beschreibung",
         "thumbnail": "./public/content/images/thumbnail.plot4ai.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Internet",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Internet"
+            ],
+            "id": "4bbf8cf7-3a0d-4c58-a879-555ad433f2fa",
+            "source": {
+              "x": 280,
+              "y": 350
+            },
+            "target": {
+              "x": 620,
+              "y": 350
+            }
+          },
+          {
+            "position": {
+              "x": 380,
+              "y": 150
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Collect Data"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "c2585d47-c8dd-45b0-8b30-26a35586cebc"
+                },
+                {
+                  "group": "right",
+                  "id": "23c314e7-ca77-4236-9a79-6cae0303ccc3"
+                },
+                {
+                  "group": "bottom",
+                  "id": "9218567f-8d40-4dfe-b4ef-0ddb328bd958"
+                },
+                {
+                  "group": "left",
+                  "id": "13444ce9-cf4f-4e2b-97b0-ffb4b7740d95"
+                }
+              ]
+            },
+            "id": "34c6ae8d-ddf3-4517-a7e2-d03a793b25cf",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Collect Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 397.5,
+              "y": 410
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "VW Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "ccb663bd-c0cb-4eb1-99c2-ab3227fa346c"
+                },
+                {
+                  "group": "right",
+                  "id": "213ffd00-11d6-4da4-a535-4db63079c3bc"
+                },
+                {
+                  "group": "bottom",
+                  "id": "22f15d65-6950-4f78-928b-b5e44134c1fe"
+                },
+                {
+                  "group": "left",
+                  "id": "a8c189db-2986-49da-a1b4-d6114191d712"
+                }
+              ]
+            },
+            "id": "84caab8b-5ab2-4aa2-9b16-a86cce55e27c",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "VW Service",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "c51fa0d9-f84e-4bbe-b34b-7eaefa334877",
+                  "title": "Neue PLOT4ai Bedrohung",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Identifiability & Linkability",
+                  "description": "Geben Sie eine Beschreibung dieser Bedrohung an",
+                  "mitigation": "Geben Sie eine Korrekturmaßnahme für diese Bedrohung oder eine Begründung N/A an",
+                  "modelType": "PLOT4ai",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "techniqueProcesses": 0,
+                "identifiabilityLinkability": 1,
+                "security": 0,
+                "nonCompliance": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "86639e8f-fc11-4fc6-aa2e-0fcc4e679442",
+            "source": {
+              "cell": "34c6ae8d-ddf3-4517-a7e2-d03a793b25cf",
+              "port": "9218567f-8d40-4dfe-b4ef-0ddb328bd958"
+            },
+            "target": {
+              "cell": "84caab8b-5ab2-4aa2-9b16-a86cce55e27c",
+              "port": "ccb663bd-c0cb-4eb1-99c2-ab3227fa346c"
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
