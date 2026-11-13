@@ -398,9 +398,18 @@
             ]
           }
         ]
+      },
+      {
+        "id": 2,
+        "title": "Neues PLOT4ai Diagramm",
+        "diagramType": "PLOT4ai",
+        "placeholder": "Neue PLOT4ai Diagramm Beschreibung",
+        "thumbnail": "./public/content/images/thumbnail.plot4ai.jpg",
+        "version": "2.6.2",
+        "cells": []
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 3,
     "reviewer": "",
     "threatTop": 4
   }
